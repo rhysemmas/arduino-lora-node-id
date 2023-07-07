@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <EEPROM.h>
 
 // change this to be the ID of your node in the mesh network
@@ -5,7 +6,8 @@ uint8_t nodeId = 1;
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial) ; // Wait for serial port to be available
+  while (!Serial)
+    ; // Wait for serial port to be available
 
   Serial.println("setting nodeId...");
 
@@ -25,6 +27,4 @@ void setup() {
   }
 }
 
-void loop() {
-
-}
+void loop() {}
